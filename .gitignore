@@ -1,11 +1,11 @@
 /MCONFIG
 /aconfig.h
-/aconfig.h.in
+# /aconfig.h.in
 /autom4te.cache
 /config.cache
 /config.log
 /config.status
-/configure
+# /configure
 /version.h
 /tftp/tftp
 /tftpd/tftpd
@@ -16,5 +16,3 @@
 *.o
 *~
 \#*
-
-!configure
