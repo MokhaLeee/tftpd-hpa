@@ -1,0 +1,21 @@
+# Standard compilation rules (don't use make builtins)
+
+.SUFFIXES: .c .cc .o .s .S .i
+
+.c.o:
+	$(CC) $(CPPFLAGS) $(CFLAGS) -c $<
+
+.c.s:
+	$(CC) $(CPPFLAGS) $(CFLAGS) -S -o $@ $<
+
+.c.i:
+	$(CC) $(CPPFLAGS) $(CFLAGS) -E -o $@ $<
+
+.cc.o:
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $<
+
+.cc.s:
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -S -o $@ $<
+
+.cc.i:
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -E -o $@ $<
